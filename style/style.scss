@@ -1,0 +1,89 @@
+@import "variables";
+@import "mixin";
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, address {
+  margin: 0 !important;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.top-bar {
+  background: $background_color;
+  color: $text_color_inverse;
+  padding: 3px 0;
+  font-size: 14px;
+
+  a {
+    color: $text_color_inverse;
+    @include transition;
+
+    &:hover {
+      color: $text_color_dark;
+    }
+  }
+
+  .social {
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+.my-nav {
+  .logo {
+    border-radius: 50%;
+    border: 4px solid $primary_color;
+  }
+
+  .logo-text {
+    margin-left: 10px;
+    font-weight: bold;
+    color: $primary_color;
+
+    span {
+      color: $background_color;
+    }
+  }
+}
+
+.slider {
+  img {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .slick-dots {
+    bottom: 25px !important;
+  }
+
+  .slick-prev {
+    left: 25px !important;
+    z-index: 99;
+  }
+
+  .slick-next {
+    right: 25px;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 75px;
+    left: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px 25px;
+    border-radius: 20px;
+    width: 75%;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
