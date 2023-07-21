@@ -21,7 +21,7 @@ const Nav = () => {
                             <Link className="nav-link active" aria-current="page" href="#">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" href="#">About Me</Link>
+                            <Link className="nav-link" aria-current="page" href="#">About Me</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -29,8 +29,8 @@ const Nav = () => {
                                 My Services
                             </a>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Frontend</a></li>
-                                <li><a className="dropdown-item" href="#">Backend</a></li>
+                                <li><Link className="dropdown-item" href="#">Frontend</Link></li>
+                                <li><Link className="dropdown-item" href="#">Backend</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item dropdown">
@@ -39,12 +39,12 @@ const Nav = () => {
                                 My Portfolio
                             </a>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">Frontend</a></li>
-                                <li><a className="dropdown-item" href="#">Backend</a></li>
+                                <li><Link className="dropdown-item" href="#">Frontend</Link></li>
+                                <li><Link className="dropdown-item" href="#">Backend</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link">Contact With Me</a>
+                            <Link href={'/'} className="nav-link">Contact With Me</Link>
                         </li>
                     </ul>
                 </div>
